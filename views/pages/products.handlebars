@@ -1,0 +1,33 @@
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Brand</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Stock</th>
+      <th></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {{#each item}}
+    
+      <tr>
+      <td>{{brand}}</td>
+      <td>{{name}}</td>
+      <td>{{price}}</td>
+      <td>{{stock}}</td>
+      <td><button class="btn btn-dark"><a class="text-light" href="/{{model}}">Show Details</a></button></td>
+    </tr>
+    
+  {{/each}}
+  </tbody>
+</table>
+
+
+
+
+
+
+

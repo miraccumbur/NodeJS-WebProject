@@ -1,0 +1,39 @@
+{{> _errorAlert}}
+{{> _successAlert}}
+
+
+{{#if addAItemCartSuccess}}
+<div class="alert alert-success">{{addAItemCartSuccess}}</div>
+{{/if}}
+
+
+{{#if item}}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Brand</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each item}}
+    
+      <tr>
+      <td>{{brand}}</td>
+      <td>{{name}}</td>
+      <td>{{price}}</td>
+    </tr>
+    
+  {{/each}}
+  </tbody>
+</table>
+<form action="/thanks" method="POST">
+<button class="btn btn-dark">Buy Them</button>
+</form>
+{{else}}
+<div class="alert alert-danger">
+  Your Cart is empty
+</div>
+{{/if}}
+

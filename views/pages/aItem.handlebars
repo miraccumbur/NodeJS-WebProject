@@ -1,0 +1,26 @@
+{{> _errorAlert}}
+<div id="itemImage" class="row justify-content-center">
+    <img src="{{image}}">
+</div>
+<div class="row justify-content-center">
+    <p id="itemBrand">Brand : {{brand}}</p>
+</div>
+<div class="row justify-content-center">
+    <p id="itemName">Name : {{name}}</p>
+</div>
+<div class="row justify-content-center">
+    <p id="itemPrice">Price : {{price}}</p>
+</div>
+<div class="row justify-content-center">
+    <p id="itemStock">Stock : {{stock}}</p>
+</div>
+<div class="row justify-content-center">
+<form action="/{{model}}" method="POST">
+  <button  class="btn btn-dark text-light" type="submit">Add To Cart</button>
+</form>
+    {{!-- <button id="addToCartButton" type="button" class="btn btn-dark">
+        <a class="text-light" href="P_{{model}}">
+            Add to Cart
+        </a>
+    </button> --}}
+</div>

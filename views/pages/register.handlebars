@@ -1,0 +1,47 @@
+{{> _errorAlert}}
+
+
+<div class="card-body">
+  <form action="/register" method="POST" class="justify-content-center">
+      <!-- i choose check-login action and post method in this form we get email and password then we post check login page-->
+      <div class="form-group">
+        <label for="namelabel">Name</label>
+        <input
+          type="name"
+          class="form-control"
+          id="name"
+          name="name"
+          aria-describedby="name"
+          placeholder="Enter name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="emaillabel">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          aria-describedby="email"
+          placeholder="Enter email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="passwordlabel">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          id="password"
+          placeholder="Enter password"
+        />
+      </div>
+      <small id="emailHelp" class="form-text text-muted"
+        >We'll never share your information with anyone else.</small
+      >
+      <br />
+      <button id="submitButton" type="submit" class="btn btn-dark">
+        Register
+      </button>
+    </form>
+</div>
